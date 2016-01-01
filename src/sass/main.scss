@@ -1,0 +1,102 @@
+/* home */
+
+@import "fonts";
+@import "include-media";
+
+
+%group {
+	&:after {
+		clear:both;
+		content: "";
+		display: block;
+	}
+}
+
+$breakpoints: map-merge($breakpoints, ('tablet': 600px));
+
+$lightBlue: #65BDE1;
+$offWhite: #bbc;
+$darkGray: #324650;
+$darkBlue: #324650;
+$ctaOrange: #F7A322;
+
+body {
+	margin: 0;
+}
+
+
+.body-content-container{
+	margin: 0 auto;
+	max-width: 600px;
+}
+
+figure {
+	height: 300px;
+}
+
+#wesk-header, #wesk-main, #wesk-footer { 
+	clear: both;
+}
+#wesk-header,  #wesk-footer { 
+	background-color: $darkBlue;
+	overflow: auto;
+}
+
+#wesk-logo {
+	background-image: url("../assets/images/wesk-logo.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin: 40px auto 0;
+	width: 200px;
+}
+
+#wesk-header {
+	background: linear-gradient(to bottom, lighten($darkBlue, 15%) 0%, $darkBlue 100%);
+	border-bottom: 2px solid #000;
+	color: white;
+}
+
+#wesk-main {}
+
+#wesk-footer {
+	background-color: $darkBlue;
+	color: white;
+	text-align: center;
+}
+
+#contact-us {
+	background-color: $ctaOrange;
+	color: $darkBlue;
+	overflow: hidden;
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+}
+
+#contact-table {
+	@extend %group;
+	display: flex;
+	justify-content: center;
+	li {
+		list-style-type: none;
+		width: 170px;
+		float: left;
+
+		h3 {
+			font-weight: bold;
+			height: 50px;
+		}
+
+		p {
+		}
+	}
+}
+@include media('<tablet'){
+	#contact-table {
+		display: block;
+		li {
+			width: 100%;
+			text-align: center;
+		}
+	}
+}

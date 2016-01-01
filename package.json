@@ -1,0 +1,32 @@
+{
+  "name": "wes-k-homepage",
+  "version": "0.0.0",
+  "description": "homepage of Wes-K, manufacturer's representative",
+  "main": "index.html",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    ""
+  ],
+  "author": "",
+  "license": "",
+  "devDependencies": {
+    "del": "^2.0.2",
+    "gulp": "^3.9.0",
+    "gulp-angular-templatecache": "^1.8.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-sass": "^2.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.4.2"
+  },
+  "dependencies": {
+    "angular": "^1.4.7",
+    "angular-ui-router": "^0.2.15",
+    "angular-ui-router-title": "^0.0.4"
+  }
+}
